@@ -79,9 +79,27 @@ h2 {
   border-radius: 5px;
   box-shadow: -3px 3px 10px 3px #242323;
 }
-.card-content p {
+.card-content p:first-of-type {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 7;
-  overflow: hidden;
+  overflow-y: scroll;
+  cursor: pointer;
+  
 }
+
+/* Permet de scrool la description du film */
+p {
+  overflow: scroll;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  }
+  ::-webkit-scrollbar {
+   width: 0px; /*remove scrollbar space  */
+  /* background: transparent; / optional: just make scrollbar invisible */
+  }
+  /* optional: show position indicator in red */
+  ::-webkit-scrollbar-thumb {
+  background: #FF0000;
+  }
+  

@@ -26,7 +26,7 @@ const moviesDisplay = async () => {
         <div class="card-content">
           <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}"></img>
           <div class="infos">
-            <p>${movie.overview}</p>
+            <p class="description">${movie.overview}</p>
             <p>Popularité : ${movie.popularity} ⭐</p>
           </div>
         </div>
