@@ -1,0 +1,32 @@
+https://api.themoviedb.org/3/search/movie?api_key=38d8a615b07ade0801bacc575fa614b4&query=Jack+Reacher
+
+
+
+1 - manifest.json 
+      standalone == fait disparaitre l'url
+
+2 - emulateur : android pie (adresse du projet : 10.0.2.2:5500)
+
+3 - check lighthouse pour controler si PWA
+
+4 - HTTPS sur mobile
+      Dans chrome aller sur : chrome://inspect/#devices
+      Port forwarding : 5500 localhost:5500
+      configure : localhost:5500
+      Sur mobile aller sur : http://localhost:5500
+      il faut un google play account
+      
+5 - service worker
+// Afficher automatiquement la bannière "Add to home screen"
+https://developers.google.com/web/fundamentals/app-install-banners/native
+
+
+En cas de probleme ! 
+A rajouter (éventuellement) dans le manifest :
+"prefer_related_applications": true,
+"related_applications": [
+  {
+    "platform": "play",
+    "id": "com.google.samples.apps.iosched"
+  }
+]
